@@ -26,7 +26,7 @@ async function getCityData(): Promise<Item[]> {
   const data = sheet.data
 
   let oldAdCode: string | undefined = undefined
-  return data.slice(1).map((row: string[]) => {
+  return data.slice(2).map((row: string[]) => {
     const [name, adCode, cityCode] = row.map(v => v.toString().trim())
 
     const level: "province" | "city" | "area" = (() => {
