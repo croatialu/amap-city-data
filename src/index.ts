@@ -55,8 +55,6 @@ async function main() {
 
   const items = await getCityData()
 
-  console.log(items, 'items')
-
   jsonProvince(items)
   jsonCity(items)
   jsonArea(items)
